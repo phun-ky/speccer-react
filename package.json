@@ -1,0 +1,98 @@
+{
+  "name": "@phun-ky/speccer-react",
+  "version": "0.0.1",
+  "description": "A React component for @phun-ky/speccer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c",
+    "clean": "rm -rf dist dts",
+    "build": "npm run clean && npm run rollup",
+    "docs:gen": "node ./node_modules/.bin/typedoc --entryPoints src --entryPointStrategy expand --gitRevision main --githubPages false --plugin typedoc-plugin-markdown --tsconfig tsconfig.json --hideInPageTOC --out api --readme none",
+    "style:lint": "./node_modules/.bin/eslint -c ./.eslintrc --max-warnings=0 src --ignore-path .gitignore ",
+    "style:format": "prettier-eslint --config .prettierrc --eslint-config-path $PWD/.eslintrc --list-different --write \"./src/**/*.ts\"",
+    "style:code": "npx putout src",
+    "commit": "npx git-cz",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phun-ky/speccer-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phun-ky/speccer-react/issues"
+  },
+  "homepage": "https://github.com/phun-ky/speccer-react#readme",
+  "keywords": [
+    "html",
+    "css",
+    "design",
+    "design system",
+    "javascript",
+    "spec",
+    "inspect",
+    "annotation",
+    "annotate",
+    "pin",
+    "specifications",
+    "anatomy",
+    "dissection",
+    "dissect",
+    "documentation",
+    "information",
+    "specification",
+    "specs",
+    "html-elements",
+    "inspect",
+    "spacing",
+    "speccer",
+    "react",
+    "a11y",
+    "accessibility"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  },
+  "engines": {
+    "node": ">=20.11.1",
+    "npm": ">=10.2.4"
+  },
+  "author": "Alexander Vasssbotn Røyne-Helgesen <alexander@phun-ky.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "react": "^18.3.1",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "git-cz": "^4.9.0",
+    "prettier": "^3.2.5",
+    "prettier-eslint": "^16.3.0",
+    "prettier-eslint-cli": "^8.0.1",
+    "putout": "^35.1.0",
+    "release-it": "^17.1.1",
+    "rollup": "^4.12.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typedoc": "^0.25.8",
+    "typedoc-plugin-frontmatter": "^0.0.2",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "typedoc-plugin-mdn-links": "^3.1.16",
+    "typedoc-plugin-no-inherit": "^1.4.0",
+    "typedoc-plugin-rename-defaults": "^0.7.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@phun-ky/speccer": "^9.1.19"
+  }
+}
