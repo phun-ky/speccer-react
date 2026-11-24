@@ -1,18 +1,22 @@
 # @phun-ky/speccer-react
 
-> A zero dependency package to highlight elements
+> [!IMPORTANT]
+> This repository is archived and was never published. There is no React wrapper
+> for SPECCER, and none is planned.
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](http://makeapullrequest.com) [![SemVer 2.0](https://img.shields.io/badge/SemVer-2.0-green.svg)](http://semver.org/spec/v2.0.0.html) ![npm version](https://img.shields.io/npm/v/@phun-ky/speccer-react) ![issues](https://img.shields.io/github/issues/phun-ky/speccer-react) ![license](https://img.shields.io/npm/l/@phun-ky/speccer-react) ![size](https://img.shields.io/bundlephobia/min/@phun-ky/speccer-react) ![npm](https://img.shields.io/npm/dm/%40phun-ky/speccer-react) ![GitHub Repo stars](https://img.shields.io/github/stars/phun-ky/speccer-react) [![codecov](https://codecov.io/gh/phun-ky/speccer-react/graph/badge.svg?token=VA91DL7ZLZ)](https://codecov.io/gh/phun-ky/speccer-react)
+[SPECCER](https://github.com/phun-ky/speccer) has no dependencies, so you can use
+it directly in any React app: call `speccer()` in a `useEffect` after the
+component has rendered, and `removeSpeccer()` when it unmounts. The
+[React guide](https://speccer.dev/guide/usage/react) has a complete component,
+with resizing, server-side rendering and lazy loading.
 
-![Image of speccer](/public/speccer.png)
+```shell
+npm i @phun-ky/speccer
+```
 
-- [@phun-ky/speccer-react](#phun-kyspeccer-react)
-  - [Contributing](#contributing)
-  - [Sponsor me](#sponsor-me)
+## License
 
-## Contributing
-
-If you want to contribute, please read the [CONTRIBUTING.md](https://github.com/phun-ky/speccer-react/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/phun-ky/speccer-react/blob/main/CODE_OF_CONDUCT.md)
+[MIT](LICENSE)
 
 ## Sponsor me
 
